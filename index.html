@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Auxílio-Acidente do INSS | Kênia Portilho — Advocacia Previdenciária</title>
-<meta name="description" content="Ficou com sequela de um acidente de qualquer natureza ou de doença do trabalho? O auxílio-acidente é uma indenização mensal do INSS que você recebe mesmo continuando a trabalhar. Análise do seu caso 100% online, para todo o Brasil.">
+<meta name="description" content="Ficou com sequela de um acidente ou de uma doença do trabalho? O auxílio-acidente é um valor pago pelo INSS todo mês, que você recebe continuando a trabalhar. Atendimento online.">
 <link rel="canonical" href="https://auxilioacidente.keniaportilho.com.br/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:title" content="Auxílio-Acidente do INSS | Kênia Portilho — Advocacia Previdenciária">
-<meta property="og:description" content="Sequela de acidente de qualquer natureza ou doença do trabalho pode gerar direito a uma indenização mensal do INSS — acumulável com o salário. Atendimento online para todo o Brasil.">
+<meta property="og:description" content="Sequela de acidente de qualquer tipo ou de doença do trabalho pode gerar um benefício mensal do INSS — que soma ao salário.">
 <meta property="og:url" content="https://auxilioacidente.keniaportilho.com.br/">
 <meta name="theme-color" content="#123334">
 <meta property="og:image" content="https://auxilioacidente.keniaportilho.com.br/og-image.jpg">
@@ -40,10 +40,9 @@
   "@context": "https://schema.org",
   "@type": "LegalService",
   "name": "Kênia Portilho — Advocacia Previdenciária",
-  "description": "Advocacia previdenciária especializada em auxílio-acidente e benefícios do INSS. Atendimento 100% online para todo o Brasil.",
+  "description": "Advocacia previdenciária especializada em auxílio-acidente e benefícios do INSS. Atendimento online.",
   "url": "https://auxilioacidente.keniaportilho.com.br/",
   "telephone": "+5531995565510",
-  "email": "keniaportilhoadv@gmail.com",
   "areaServed": "BR",
   "availableLanguage": "pt-BR",
   "address": {
@@ -56,7 +55,6 @@
   "founder": { "@type": "Person", "name": "Kênia Portilho", "jobTitle": "Advogada" }
 }
 </script>
-
 <style>
 /* ============================================================
    TOKENS — paleta do Manual de Aplicações da Marca
@@ -81,7 +79,7 @@
 
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-section[id],[id]{scroll-margin-top:88px}
+[id]{scroll-margin-top:88px}
 body{
   margin:0;background:var(--papel);color:var(--tinta);
   font-family:var(--corpo);font-size:17.5px;line-height:1.65;
@@ -94,10 +92,9 @@ p{margin:0 0 1.05em}
 strong{font-weight:700}
 
 .wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 24px}
-.sec{padding:92px 0}
-.sec--tight{padding:68px 0}
+.sec{padding:88px 0}
+.sec--tight{padding:64px 0}
 
-/* Eyebrow: tipografia espacejada do próprio logotipo */
 .eyebrow{
   font-family:var(--disp);font-weight:500;font-size:11.5px;
   letter-spacing:.34em;text-transform:uppercase;
@@ -117,7 +114,7 @@ h3{font-size:clamp(20px,2.4vw,24px)}
    ============================================================ */
 .btn{
   display:inline-flex;align-items:center;justify-content:center;gap:11px;
-  font-family:var(--corpo);font-weight:700;font-size:16.5px;letter-spacing:.005em;
+  font-family:var(--corpo);font-weight:700;font-size:16.5px;
   padding:17px 30px;border:0;border-radius:var(--r);cursor:pointer;
   text-decoration:none;transition:transform .18s ease,box-shadow .18s ease,background .18s ease;
   line-height:1.2;text-align:center;
@@ -125,8 +122,6 @@ h3{font-size:clamp(20px,2.4vw,24px)}
 .btn svg{flex:0 0 auto}
 .btn--zap{background:var(--zap);color:#06301A;box-shadow:0 10px 26px -12px rgba(37,211,102,.75)}
 .btn--zap:hover{transform:translateY(-2px);box-shadow:0 16px 34px -12px rgba(37,211,102,.85)}
-.btn--gold{background:var(--champ);color:var(--verde-esc)}
-.btn--gold:hover{transform:translateY(-2px);background:#fff}
 .btn--ghost{background:transparent;color:var(--champ);box-shadow:inset 0 0 0 1px rgba(247,229,203,.4)}
 .btn--ghost:hover{background:rgba(247,229,203,.1)}
 .btn--outline{background:transparent;color:var(--verde);box-shadow:inset 0 0 0 1px var(--linha)}
@@ -151,7 +146,7 @@ h3{font-size:clamp(20px,2.4vw,24px)}
    ============================================================ */
 .hero{
   position:relative;background:var(--verde-esc);color:var(--champ);
-  padding:74px 0 84px;overflow:hidden;
+  padding:84px 0 92px;overflow:hidden;
 }
 .hero::before{
   content:"";position:absolute;inset:0;
@@ -160,7 +155,6 @@ h3{font-size:clamp(20px,2.4vw,24px)}
     radial-gradient(60% 70% at 2% 100%,rgba(30,78,79,.9),transparent 60%);
   pointer-events:none;
 }
-/* ampulheta da marca como marca d'água estrutural */
 .hero__glass{
   position:absolute;right:-90px;top:50%;transform:translateY(-50%);
   width:min(520px,52vw);opacity:.13;pointer-events:none;
@@ -168,46 +162,35 @@ h3{font-size:clamp(20px,2.4vw,24px)}
 .hero .wrap{position:relative;z-index:2}
 .hero h1{
   font-size:clamp(33px,5.6vw,60px);color:#fff;font-weight:400;
-  max-width:20ch;margin:0 0 22px;text-wrap:balance;
+  max-width:20ch;margin:0 0 24px;text-wrap:balance;
 }
 .hero h1 em{font-style:normal;color:var(--champ);display:block}
-.hero .lead{color:rgba(247,229,203,.9);max-width:52ch;margin-bottom:32px;font-size:clamp(17px,2vw,20px)}
-.hero__ctas{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:44px}
+.hero .lead{color:rgba(247,229,203,.9);max-width:50ch;margin-bottom:34px;font-size:clamp(17px,2vw,20px)}
+.hero__ctas{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:26px}
 @media(max-width:560px){.hero__ctas{display:grid;gap:12px}.hero__ctas .btn{width:100%}}
-.hero__note{font-size:14px;color:rgba(247,229,203,.62);margin:-30px 0 40px;display:flex;align-items:center;gap:9px}
+.hero__note{
+  font-size:14.5px;color:rgba(247,229,203,.62);margin:0;
+  display:flex;align-items:center;gap:9px
+}
 .hero__note::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--zap);box-shadow:0 0 0 4px rgba(37,211,102,.22)}
 
-.trust{
-  display:grid;grid-template-columns:repeat(4,1fr);gap:1px;
-  background:rgba(247,229,203,.16);border:1px solid rgba(247,229,203,.16);
-}
-.trust div{background:var(--verde-esc);padding:20px 18px}
-.trust b{
-  display:block;font-family:var(--disp);font-size:26px;font-weight:500;color:#fff;line-height:1
-}
-.trust span{
-  display:block;margin-top:8px;font-size:11px;letter-spacing:.16em;
-  text-transform:uppercase;color:var(--nude);line-height:1.5
-}
-@media(max-width:820px){.trust{grid-template-columns:repeat(2,1fr)}}
-
 /* ============================================================
-   FAIXA DE DESTAQUE (o ponto que mais converte)
+   FAIXA
    ============================================================ */
 .strip{background:var(--champ);padding:30px 0}
-.strip .wrap{display:flex;align-items:center;gap:22px;flex-wrap:wrap;justify-content:center;text-align:center}
+.strip .wrap{display:flex;align-items:center;justify-content:center;text-align:center}
 .strip p{margin:0;font-family:var(--disp);font-size:clamp(18px,2.6vw,25px);color:var(--verde-esc);line-height:1.35}
 .strip p b{font-weight:600;box-shadow:inset 0 -.5em 0 rgba(171,152,131,.35)}
 
 /* ============================================================
    PILARES
    ============================================================ */
-.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:52px}
-.pillar{background:#fff;border:1px solid var(--linha);padding:34px 30px 32px;position:relative}
-.pillar__ico{width:38px;height:38px;color:var(--verde);margin-bottom:20px}
-.pillar h3{margin-bottom:12px;color:var(--verde)}
+.pillars{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:50px}
+.pillar{background:#fff;border:1px solid var(--linha);padding:32px 30px}
+.pillar__ico{width:36px;height:36px;color:var(--verde);margin-bottom:18px}
+.pillar h3{margin-bottom:11px;color:var(--verde)}
 .pillar p{margin:0;font-size:16.5px;color:#3d5150}
-@media(max-width:860px){.pillars{grid-template-columns:1fr;gap:16px}}
+@media(max-width:820px){.pillars{grid-template-columns:1fr;gap:16px}}
 
 /* ============================================================
    QUEM TEM DIREITO
@@ -215,7 +198,7 @@ h3{font-size:clamp(20px,2.4vw,24px)}
 .rights{background:var(--verde);color:var(--champ)}
 .rights h2{color:#fff}
 .rights .lead{color:rgba(247,229,203,.86)}
-.checks{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(247,229,203,.2);margin-top:48px;border:1px solid rgba(247,229,203,.2)}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(247,229,203,.2);margin-top:46px;border:1px solid rgba(247,229,203,.2)}
 .check{background:var(--verde);padding:32px 30px;display:flex;gap:18px;align-items:flex-start}
 .check__n{
   flex:0 0 auto;width:30px;height:30px;border:1px solid var(--champ);border-radius:50%;
@@ -227,87 +210,17 @@ h3{font-size:clamp(20px,2.4vw,24px)}
 @media(max-width:860px){.checks{grid-template-columns:1fr}.check{padding:26px 24px}}
 
 .rights__foot{
-  margin-top:36px;padding:26px 28px;background:rgba(247,229,203,.08);
+  margin-top:34px;padding:26px 28px;background:rgba(247,229,203,.08);
   border-left:3px solid var(--nude);font-size:16.5px;
 }
 .rights__foot p:last-child{margin:0}
-
-/* ============================================================
-   ASSINATURA — LINHA DO TEMPO DOS RETROATIVOS
-   ============================================================ */
-.rt{background:var(--verde-prof);color:var(--champ)}
-.rt h2{color:#fff}
-.rt .lead{color:rgba(247,229,203,.85)}
-.rails{margin-top:60px;display:grid;gap:62px}
-.rail__cap{
-  font-family:var(--disp);font-size:12px;letter-spacing:.2em;text-transform:uppercase;
-  color:var(--nude);margin-bottom:22px;display:flex;align-items:center;gap:12px;flex-wrap:wrap
-}
-.rail__cap i{
-  font-style:normal;font-family:var(--corpo);font-size:11px;letter-spacing:.06em;
-  text-transform:none;color:rgba(247,229,203,.55)
-}
-.rail{position:relative;height:74px}
-.rail__track{
-  position:absolute;left:0;right:0;top:26px;height:3px;background:rgba(247,229,203,.16)
-}
-.rail__fill{
-  position:absolute;left:var(--s,0%);top:26px;height:3px;width:0;
-  background:linear-gradient(90deg,#F7E5CB,#AB9883);
-  transition:width 1.4s cubic-bezier(.22,.8,.3,1);
-}
-.rail.on .rail__fill{width:var(--w)}
-.rail__lost{
-  position:absolute;left:var(--ls);width:var(--lw);top:26px;height:3px;
-  background:repeating-linear-gradient(90deg,rgba(247,229,203,.32) 0 5px,transparent 5px 11px)
-}
-.rail__lostcap{
-  position:absolute;top:44px;left:calc(var(--ls) + var(--lw) / 2);transform:translateX(-50%);
-  font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:rgba(247,229,203,.45);white-space:nowrap
-}
-.node{position:absolute;top:0;transform:translateX(-50%);text-align:center;width:150px}
-.node i{
-  display:block;width:13px;height:13px;border-radius:50%;background:var(--verde-prof);
-  border:2px solid var(--nude);margin:21px auto 10px
-}
-.node.is-end i{background:var(--champ);border-color:var(--champ);box-shadow:0 0 0 6px rgba(247,229,203,.16)}
-.node b{display:block;font-family:var(--disp);font-size:14.5px;color:#fff;font-weight:500;line-height:1.3}
-.node span{display:block;font-size:12px;color:var(--nude);letter-spacing:.05em;margin-top:3px}
-.rail__badge{
-  position:absolute;top:-4px;left:calc(var(--s,0%) + var(--w) / 2);transform:translateX(-50%);
-  font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--champ);
-  background:rgba(171,152,131,.22);padding:4px 14px;white-space:nowrap
-}
-/* etiqueta que substitui o selo do trilho no mobile */
-.node__tag{display:none}
-@media(max-width:760px){
-  .rail{height:auto;padding:2px 0 0 10px}
-  .rail__track,.rail__fill,.rail__badge,.rail__lost,.rail__lostcap{display:none}
-  .node{
-    position:relative;left:auto!important;transform:none;width:auto;text-align:left;
-    padding:0 0 24px 24px;border-left:2px solid rgba(247,229,203,.22)
-  }
-  .node i{position:absolute;left:-8px;top:3px;margin:0}
-  .node:last-child{border-left-color:transparent;padding-bottom:0}
-  .node__tag{
-    display:inline-block;margin-top:8px;font-style:normal;font-size:10.5px;letter-spacing:.14em;
-    text-transform:uppercase;color:var(--champ);background:rgba(171,152,131,.22);padding:4px 10px
-  }
-}
-.rt__warn{
-  margin-top:52px;font-size:15.5px;color:rgba(247,229,203,.72);
-  border-top:1px solid rgba(247,229,203,.16);padding-top:24px;max-width:78ch
-}
 
 /* ============================================================
    AUTOTESTE
    ============================================================ */
 .quiz{background:var(--champ)}
 .quiz h2{color:var(--verde-esc)}
-.qbox{
-  background:#fff;border:1px solid var(--linha);margin-top:44px;
-  padding:44px 40px;max-width:760px;
-}
+.qbox{background:#fff;border:1px solid var(--linha);margin-top:40px;padding:44px 40px;max-width:760px}
 .qprog{display:flex;gap:7px;margin-bottom:28px}
 .qprog i{flex:1;height:3px;background:rgba(171,152,131,.28)}
 .qprog i.on{background:var(--verde)}
@@ -332,80 +245,21 @@ h3{font-size:clamp(20px,2.4vw,24px)}
 @media(max-width:620px){.qbox{padding:30px 22px}}
 
 /* ============================================================
-   SELO GOOGLE NO HERO
-   ============================================================ */
-.gbadge{
-  display:inline-flex;align-items:center;gap:10px;margin-bottom:26px;
-  border:1px solid rgba(247,229,203,.28);padding:9px 16px;text-decoration:none;
-  transition:.18s
-}
-.gbadge:hover{background:rgba(247,229,203,.08)}
-.gbadge b{font-family:var(--disp);font-size:16px;color:#fff;font-weight:500}
-.gbadge i{font-style:normal;color:#F4B400;letter-spacing:1px;font-size:13px}
-.gbadge span{font-size:12.5px;color:rgba(247,229,203,.66)}
-
-/* ============================================================
-   QUEM NAO TEM DIREITO
-   ============================================================ */
-.nots{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--linha);border:1px solid var(--linha);margin-top:44px}
-.not{background:#fff;padding:26px 28px;display:flex;gap:16px;align-items:flex-start}
-.not__x{
-  flex:0 0 auto;width:26px;height:26px;border:1px solid var(--nude);border-radius:50%;
-  display:grid;place-items:center;color:var(--nude);margin-top:2px
-}
-.not__x svg{width:11px;height:11px}
-.not b{display:block;font-family:var(--disp);font-size:17.5px;color:var(--verde);font-weight:500;margin-bottom:5px;line-height:1.3}
-.not span{font-size:15.5px;color:#4e6160;line-height:1.55}
-@media(max-width:820px){.nots{grid-template-columns:1fr}}
-.nots__foot{
-  margin-top:30px;padding:24px 26px;background:var(--champ);
-  font-size:16.5px;color:var(--verde-esc);display:flex;gap:22px;align-items:center;flex-wrap:wrap
-}
-.nots__foot p{margin:0;flex:1;min-width:260px}
-
-/* ============================================================
-   INSS NEGOU
-   ============================================================ */
-.deny{background:var(--verde);color:var(--champ)}
-.deny h2{color:#fff}
-.deny .grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
-.deny p{color:rgba(247,229,203,.87)}
-.paths{display:grid;gap:1px;background:rgba(247,229,203,.2);border:1px solid rgba(247,229,203,.2)}
-.path{background:var(--verde);padding:24px 26px}
-.path b{display:block;font-family:var(--disp);font-size:18px;color:#fff;font-weight:500;margin-bottom:6px}
-.path span{font-size:15.5px;color:rgba(247,229,203,.8);line-height:1.55}
-@media(max-width:900px){.deny .grid{grid-template-columns:1fr;gap:38px}}
-
-/* ============================================================
-   PROVA
-   ============================================================ */
-.proof{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:44px}
-.pf{border-top:2px solid var(--verde);padding-top:24px}
-.pf b{display:block;font-family:var(--disp);font-size:19px;color:var(--verde);font-weight:500;margin-bottom:9px}
-.pf span{font-size:16px;color:#4e6160;line-height:1.6}
-@media(max-width:820px){.proof{grid-template-columns:1fr;gap:28px}}
-
-/* ============================================================
-   BRASIL
-   ============================================================ */
-.br{background:var(--verde-prof);color:var(--champ);text-align:center}
-.br h2{color:#fff;max-width:22ch;margin:0 auto 20px}
-.br>.wrap>p{max-width:60ch;margin:0 auto 46px;color:rgba(247,229,203,.85)}
-.brgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(247,229,203,.18);border:1px solid rgba(247,229,203,.18);text-align:left}
-.brgrid div{background:var(--verde-prof);padding:30px 28px}
-.brgrid b{display:block;font-family:var(--disp);font-size:18px;color:#fff;font-weight:500;margin-bottom:8px}
-.brgrid span{font-size:15.5px;color:rgba(247,229,203,.78);line-height:1.6}
-@media(max-width:820px){.brgrid{grid-template-columns:1fr}}
-
-/* ============================================================
    CASOS
    ============================================================ */
-.cases{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--linha);border:1px solid var(--linha);margin-top:48px}
+.cases{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--linha);border:1px solid var(--linha);margin-top:44px}
 .case{background:#fff;padding:28px 26px}
 .case b{display:block;font-family:var(--disp);font-size:18.5px;color:var(--verde);margin-bottom:7px;font-weight:500}
 .case span{font-size:15.5px;color:#4e6160;line-height:1.55}
 @media(max-width:860px){.cases{grid-template-columns:1fr 1fr}}
 @media(max-width:560px){.cases{grid-template-columns:1fr}}
+
+/* ============================================================
+   INSS NEGOU
+   ============================================================ */
+.deny{background:var(--verde);color:var(--champ)}
+.deny h2{color:#fff;max-width:20ch}
+.deny p{color:rgba(247,229,203,.87);max-width:62ch}
 
 /* ============================================================
    COMO FUNCIONA
@@ -423,27 +277,6 @@ h3{font-size:clamp(20px,2.4vw,24px)}
 @media(max-width:520px){.steps{grid-template-columns:1fr}}
 
 /* ============================================================
-   AVALIAÇÕES GOOGLE
-   ============================================================ */
-.gwrap{margin-top:44px;display:grid;grid-template-columns:300px 1fr;gap:44px;align-items:start}
-.gcard{background:#fff;border:1px solid var(--linha);padding:32px 28px;text-align:center}
-.gcard .glogo{display:flex;align-items:center;justify-content:center;gap:9px;font-weight:700;font-size:15px;color:#5f6368;margin-bottom:18px}
-.gscore{font-family:var(--disp);font-size:56px;line-height:1;color:var(--verde);font-weight:500}
-.gstars{color:#F4B400;font-size:21px;letter-spacing:3px;margin:10px 0 6px}
-.gcount{font-size:14px;color:#6d7f7e;margin-bottom:22px}
-.greviews{display:grid;gap:16px}
-.grev{background:#fff;border:1px solid var(--linha);padding:24px 26px}
-.grev__top{display:flex;align-items:center;gap:12px;margin-bottom:12px}
-.gav{width:38px;height:38px;border-radius:50%;background:var(--verde);color:var(--champ);display:grid;place-items:center;font-family:var(--disp);font-size:17px}
-.grev__top b{display:block;font-size:15.5px;font-family:var(--corpo)}
-.grev__top span{font-size:13px;color:#8a9a99}
-.grev p{margin:0;font-size:16px;color:#3d5150}
-.gempty{
-  background:#fff;border:1px dashed var(--linha);padding:36px 30px;text-align:center;color:#5c6f6e;font-size:16px
-}
-@media(max-width:880px){.gwrap{grid-template-columns:1fr}}
-
-/* ============================================================
    SOBRE
    ============================================================ */
 .about{background:var(--verde);color:var(--champ)}
@@ -453,18 +286,21 @@ h3{font-size:clamp(20px,2.4vw,24px)}
 .about__ph{position:relative}
 .about__ph img{width:100%;filter:saturate(.94);position:relative;z-index:1}
 .about__ph::after{content:"";position:absolute;left:20px;top:20px;right:-20px;bottom:-20px;border:1px solid var(--nude);z-index:0}
-@media(max-width:900px){.about__ph::after{right:-12px;bottom:-12px;left:12px;top:12px}}
 .oab{
   margin-top:26px;display:inline-flex;align-items:center;gap:12px;
   font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--nude);
   border:1px solid rgba(247,229,203,.28);padding:11px 18px
 }
-@media(max-width:900px){.about .grid{grid-template-columns:1fr;gap:44px}.about__ph{max-width:400px}}
+@media(max-width:900px){
+  .about .grid{grid-template-columns:1fr;gap:44px}
+  .about__ph{max-width:400px}
+  .about__ph::after{right:-12px;bottom:-12px;left:12px;top:12px}
+}
 
 /* ============================================================
    FAQ
    ============================================================ */
-.faq{margin-top:44px;border-top:1px solid var(--linha);max-width:900px}
+.faq{margin-top:40px;border-top:1px solid var(--linha);max-width:900px}
 .faq details{border-bottom:1px solid var(--linha)}
 .faq summary{
   list-style:none;cursor:pointer;padding:26px 44px 26px 0;position:relative;
@@ -490,8 +326,7 @@ h3{font-size:clamp(20px,2.4vw,24px)}
 }
 .final .wrap{position:relative;z-index:2}
 .final h2{color:#fff;max-width:20ch;margin:0 auto 20px}
-.final p{max-width:56ch;margin:0 auto 34px;color:rgba(247,229,203,.86)}
-.final__ctas{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.final p{max-width:54ch;margin:0 auto 34px;color:rgba(247,229,203,.86)}
 
 /* ============================================================
    RODAPÉ
@@ -513,7 +348,7 @@ footer ul{list-style:none;margin:0;padding:0;display:grid;gap:11px}
 @media(max-width:820px){.fgrid{grid-template-columns:1fr;gap:38px}}
 
 /* ============================================================
-   BARRA FIXA MOBILE
+   BARRA FIXA / FLUTUANTE
    ============================================================ */
 .dock{
   position:fixed;left:0;right:0;bottom:0;z-index:70;display:none;
@@ -522,8 +357,6 @@ footer ul{list-style:none;margin:0;padding:0;display:grid;gap:11px}
   border-top:1px solid rgba(247,229,203,.16)
 }
 @media(max-width:820px){.dock{display:block}body{padding-bottom:78px}}
-
-/* Botão flutuante desktop */
 .float{
   position:fixed;right:26px;bottom:26px;z-index:70;width:60px;height:60px;border-radius:50%;
   background:var(--zap);display:grid;place-items:center;
@@ -534,7 +367,6 @@ footer ul{list-style:none;margin:0;padding:0;display:grid;gap:11px}
 
 @media(prefers-reduced-motion:reduce){
   *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
-  .rail__fill{width:var(--w)!important}
 }
 </style>
 </head>
@@ -544,10 +376,7 @@ footer ul{list-style:none;margin:0;padding:0;display:grid;gap:11px}
 <header class="topbar">
   <div class="wrap">
     <a href="#topo" aria-label="Kênia Portilho Advocacia Previdenciária"><img src="logo.png" alt="Kênia Portilho — Advocacia Previdenciária"></a>
-    <a class="btn btn--zap" href="__WA_TOPO__" target="_blank" rel="noopener">
-      <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.65-2.05-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.8h-.02a9.8 9.8 0 0 1-4.99-1.37l-.36-.21-3.71.97.99-3.62-.23-.37a9.78 9.78 0 0 1-1.5-5.23c0-5.4 4.4-9.8 9.82-9.8 2.62 0 5.08 1.03 6.93 2.88a9.74 9.74 0 0 1 2.87 6.93c0 5.4-4.4 9.8-9.8 9.8M20.5 3.5A11.75 11.75 0 0 0 12.05 0C5.55 0 .26 5.29.26 11.79c0 2.08.54 4.1 1.58 5.89L.16 24l6.47-1.7a11.74 11.74 0 0 0 5.42 1.38h.01c6.5 0 11.79-5.29 11.79-11.79 0-3.15-1.23-6.11-3.46-8.34"/></svg>
-      <span>Falar no WhatsApp</span>
-    </a>
+    <a class="btn btn--zap" href="__WA_TOPO__" target="_blank" rel="noopener"><svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.65-2.05-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.8h-.02a9.8 9.8 0 0 1-4.99-1.37l-.36-.21-3.71.97.99-3.62-.23-.37a9.78 9.78 0 0 1-1.5-5.23c0-5.4 4.4-9.8 9.82-9.8 2.62 0 5.08 1.03 6.93 2.88a9.74 9.74 0 0 1 2.87 6.93c0 5.4-4.4 9.8-9.8 9.8M20.5 3.5A11.75 11.75 0 0 0 12.05 0C5.55 0 .26 5.29.26 11.79c0 2.08.54 4.1 1.58 5.89L.16 24l6.47-1.7a11.74 11.74 0 0 0 5.42 1.38h.01c6.5 0 11.79-5.29 11.79-11.79 0-3.15-1.23-6.11-3.46-8.34"/></svg><span>Falar no WhatsApp</span></a>
   </div>
 </header>
 
@@ -555,35 +384,20 @@ footer ul{list-style:none;margin:0;padding:0;display:grid;gap:11px}
 <section class="hero" id="topo">
   <img class="hero__glass" src="ampulheta.png" alt="" aria-hidden="true">
   <div class="wrap">
-    <p class="eyebrow">Auxílio-acidente · Art. 86 da Lei 8.213/91</p>
     <h1>Ficou com sequela de um acidente?<em>O INSS pode te dever uma indenização mensal.</em></h1>
-    <p class="lead">O acidente não precisa ter sido no trabalho. Se você ficou com alguma limitação e trabalhava de carteira assinada na época, existe um benefício que você recebe <strong>mesmo continuando a trabalhar</strong> — e ele costuma vir com valores atrasados.</p>
-    <a class="gbadge" id="gbadge" href="https://www.google.com/search?q=K%C3%AAnia+Portilho+Advocacia+Previdenci%C3%A1ria" target="_blank" rel="noopener">
-      <svg width="17" height="17" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.1 24.5c0-1.6-.1-2.7-.4-4H24v7.3h12.1c-.2 1.9-1.6 4.9-4.5 6.9l6.9 5.4c4.1-3.8 6.6-9.4 6.6-15.6"/><path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.3l-6.9-5.4c-1.9 1.3-4.4 2.2-7.6 2.2-5.8 0-10.7-3.8-12.5-9.1l-7.1 5.5C8.1 41.1 15.4 46 24 46"/><path fill="#FBBC05" d="M11.5 28.4c-.5-1.4-.7-2.9-.7-4.4s.3-3 .7-4.4l-7.1-5.6C2.9 16.9 2 20.3 2 24s.9 7.1 2.4 10z"/><path fill="#EA4335" d="M24 10.3c4.1 0 6.9 1.8 8.5 3.3l6.2-6C34.9 4.1 29.9 2 24 2 15.4 2 8.1 6.9 4.4 14l7.1 5.6c1.8-5.3 6.7-9.3 12.5-9.3"/></svg>
-      <b id="hnota">5,0</b><i aria-hidden="true">★★★★★</i><span>avaliações no Google</span>
-    </a>
+    <p class="lead">Não precisa ter sido acidente de trabalho. Se sobrou alguma limitação e você tinha carteira assinada na época, pode existir um benefício do INSS no seu nome.</p>
     <div class="hero__ctas">
-      <a class="btn btn--zap" href="__WA_HERO__" target="_blank" rel="noopener">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.65-2.05-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.8h-.02a9.8 9.8 0 0 1-4.99-1.37l-.36-.21-3.71.97.99-3.62-.23-.37a9.78 9.78 0 0 1-1.5-5.23c0-5.4 4.4-9.8 9.82-9.8 2.62 0 5.08 1.03 6.93 2.88a9.74 9.74 0 0 1 2.87 6.93c0 5.4-4.4 9.8-9.8 9.8M20.5 3.5A11.75 11.75 0 0 0 12.05 0C5.55 0 .26 5.29.26 11.79c0 2.08.54 4.1 1.58 5.89L.16 24l6.47-1.7a11.74 11.74 0 0 0 5.42 1.38h.01c6.5 0 11.79-5.29 11.79-11.79 0-3.15-1.23-6.11-3.46-8.34"/></svg>
-        Falar com a advogada
-      </a>
+      <a class="btn btn--zap" href="__WA_HERO__" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.65-2.05-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.8h-.02a9.8 9.8 0 0 1-4.99-1.37l-.36-.21-3.71.97.99-3.62-.23-.37a9.78 9.78 0 0 1-1.5-5.23c0-5.4 4.4-9.8 9.82-9.8 2.62 0 5.08 1.03 6.93 2.88a9.74 9.74 0 0 1 2.87 6.93c0 5.4-4.4 9.8-9.8 9.8M20.5 3.5A11.75 11.75 0 0 0 12.05 0C5.55 0 .26 5.29.26 11.79c0 2.08.54 4.1 1.58 5.89L.16 24l6.47-1.7a11.74 11.74 0 0 0 5.42 1.38h.01c6.5 0 11.79-5.29 11.79-11.79 0-3.15-1.23-6.11-3.46-8.34"/></svg>Falar com a advogada</a>
       <a class="btn btn--ghost" href="#autoteste">Ver se meu caso se encaixa</a>
     </div>
-    <p class="hero__note">Atendimento 100% online, para todo o Brasil.</p>
-
-    <div class="trust">
-      <div><b>+13</b><span>anos atuando em benefícios do INSS</span></div>
-      <div><b>50%</b><span>do salário de benefício, por lei</span></div>
-      <div><b id="tnota">5,0</b><span>nota no Google</span></div>
-      <div><b>Brasil</b><span>atendimento 100% online</span></div>
-    </div>
+    <p class="hero__note">Atendimento online, sem sair de casa.</p>
   </div>
 </section>
 
 <!-- ================= FAIXA ================= -->
 <div class="strip">
   <div class="wrap">
-    <p>É <b>indenização</b>, não aposentadoria. Você recebe e <b>continua trabalhando normalmente</b>.</p>
+    <p>É uma <b>indenização</b>, não é aposentadoria. Você recebe e <b>continua trabalhando</b>.</p>
   </div>
 </div>
 
@@ -592,38 +406,28 @@ footer ul{list-style:none;margin:0;padding:0;display:grid;gap:11px}
   <div class="wrap">
     <p class="eyebrow">O que é o benefício</p>
     <h2>Um benefício que quase ninguém pede — porque quase ninguém sabe que existe</h2>
-    <p class="lead" style="margin-top:22px">O auxílio-acidente está no artigo 86 da Lei 8.213/91. Ele é devido quando, depois que as lesões se consolidam, restam <strong>sequelas que reduzem a capacidade para o trabalho que a pessoa exercia</strong>. Não precisa incapacitar por completo: basta que tenha ficado mais difícil.</p>
+    <p class="lead" style="margin-top:22px">O auxílio-acidente é pago pelo INSS a quem ficou com uma sequela depois de um acidente ou de uma doença ligada ao trabalho. Você não precisa estar impedido de trabalhar: basta que a sequela tenha deixado o seu serviço mais difícil.</p>
 
     <div class="pillars">
       <div class="pillar">
         <svg class="pillar__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
         <h3>Soma ao seu salário</h3>
-        <p>Como é indenização e não substituição de renda, o benefício não impede você de trabalhar, nem de receber salário, nem de continuar contribuindo para a aposentadoria.</p>
-      </div>
-      <div class="pillar">
-        <svg class="pillar__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
-        <h3>Vale para trás</h3>
-        <p>Reconhecido o direito, o INSS deve os valores retroativos — em regra desde o dia seguinte ao fim do auxílio-doença, ou desde o requerimento, conforme o caso.</p>
+        <p>Ele não substitui a sua renda, ele se junta a ela. Você recebe o benefício, continua no emprego e segue contribuindo normalmente para a sua aposentadoria.</p>
       </div>
       <div class="pillar">
         <svg class="pillar__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M4 20V9M10 20V4M16 20v-7M22 20H2"/></svg>
-        <h3>50% do salário de benefício</h3>
-        <p>O valor corresponde a 50% do salário de benefício e é pago mensalmente até a véspera do início de qualquer aposentadoria.</p>
+        <h3>Cai na conta todo mês</h3>
+        <p>O valor é metade do que o INSS usaria como base para calcular o seu benefício. Não é parcela única: é pago mês a mês, enquanto você não se aposentar.</p>
       </div>
       <div class="pillar">
-        <svg class="pillar__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M12 3l7.5 4v5c0 4.4-3.1 8.2-7.5 9-4.4-.8-7.5-4.6-7.5-9V7z"/></svg>
-        <h3>Acidente de qualquer natureza</h3>
-        <p>Trânsito, casa, lazer, trabalho ou trajeto. A lei não exige que o acidente tenha relação com o emprego — exige que você fosse segurado quando ele aconteceu.</p>
+        <svg class="pillar__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+        <h3>Também vale para trás</h3>
+        <p>Reconhecido o direito, em regra o INSS deve também as parcelas do período anterior ao pedido. Quanto mais tempo passa, porém, menos dá para cobrar de trás.</p>
       </div>
       <div class="pillar">
         <svg class="pillar__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M3 17l5-5 4 3 5-7 4 4"/><path d="M3 21h18"/></svg>
-        <h3>Entra no cálculo da aposentadoria</h3>
-        <p>O artigo 31 da Lei 8.213/91 determina que o valor mensal do auxílio-acidente integra o salário de contribuição para o cálculo do salário de benefício de qualquer aposentadoria.</p>
-      </div>
-      <div class="pillar">
-        <svg class="pillar__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="1"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
-        <h3>Pago mês a mês, sem prazo curto</h3>
-        <p>Uma vez concedido, o benefício segue sendo pago até a véspera do início de qualquer aposentadoria — não é parcela única nem pagamento por tempo determinado.</p>
+        <h3>Melhora a sua aposentadoria</h3>
+        <p>O que você receber de auxílio-acidente entra na conta da sua aposentadoria lá na frente. Ou seja, ele ajuda hoje e ainda pesa no cálculo depois.</p>
       </div>
     </div>
   </div>
@@ -633,121 +437,44 @@ footer ul{list-style:none;margin:0;padding:0;display:grid;gap:11px}
 <section class="sec rights" id="direito">
   <div class="wrap">
     <p class="eyebrow">Quem tem direito</p>
-    <h2>Quatro pontos. Se os quatro batem com a sua história, vale conversar.</h2>
-    <p class="lead" style="margin-top:20px">A maioria das pessoas se elimina sozinha por achar que o acidente precisava ser no trabalho. Não precisa.</p>
+    <h2>São quatro pontos. Se os quatro batem com a sua história, vale conversar.</h2>
+    <p class="lead" style="margin-top:20px">A maioria das pessoas se descarta sozinha por achar que o acidente precisava ser no trabalho. Não precisa.</p>
 
     <div class="checks">
       <div class="check">
         <span class="check__n"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M4 12.5 9.5 18 20 6.5"/></svg></span>
         <div>
-          <h3>Houve um acidente de qualquer natureza</h3>
-          <p>Acidente de carro ou moto, queda em casa, acidente doméstico, agressão, acidente de trabalho ou no trajeto. A lei fala em acidente de <strong>qualquer natureza</strong> — a origem não importa.</p>
+          <h3>Houve um acidente, de qualquer tipo</h3>
+          <p>Batida de carro ou moto, queda em casa, acidente no serviço ou no caminho dele. A lei não exige que tenha acontecido no trabalho.</p>
         </div>
       </div>
       <div class="check">
         <span class="check__n"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M4 12.5 9.5 18 20 6.5"/></svg></span>
         <div>
-          <h3>Ficou uma sequela definitiva</h3>
-          <p>Depois que o tratamento terminou, sobrou alguma limitação permanente: dor que não passa, movimento que não voltou, perda de força, de audição, de visão, cicatriz que atrapalha, uso de placa ou pino.</p>
+          <h3>Ficou uma sequela que não passou</h3>
+          <p>Terminado o tratamento, sobrou alguma coisa: dor que não sai, movimento que não voltou, perda de força, de audição ou de visão, placa ou pino colocado.</p>
         </div>
       </div>
       <div class="check">
         <span class="check__n"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M4 12.5 9.5 18 20 6.5"/></svg></span>
         <div>
-          <h3>Essa sequela dificulta o seu trabalho</h3>
-          <p>Não é preciso estar impedido de trabalhar. Basta que a função que você já exercia tenha ficado mais difícil, mais lenta ou mais dolorosa por causa da sequela.</p>
+          <h3>Essa sequela atrapalha o seu trabalho</h3>
+          <p>Você não precisa estar impedido de trabalhar. Basta que o serviço tenha ficado mais difícil, mais lento ou mais dolorido por causa dela.</p>
         </div>
       </div>
       <div class="check">
         <span class="check__n"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M4 12.5 9.5 18 20 6.5"/></svg></span>
         <div>
-          <h3>Você era segurado na época do acidente</h3>
-          <p>Estava de carteira assinada, era trabalhador avulso ou segurado especial (rural). Também conta quem estava no <strong>período de graça</strong>: em regra até 12 meses depois de sair do emprego, e até <strong>24 meses</strong> para quem estava em situação de desemprego comprovada, como quem recebeu seguro-desemprego.</p>
+          <h3>Você tinha carteira assinada na época</h3>
+          <p>Vale também para trabalhador rural e para quem tinha saído do emprego havia pouco tempo: em geral até 12 meses, e até 24 meses para quem recebeu seguro-desemprego.</p>
         </div>
       </div>
     </div>
 
     <div class="rights__foot">
-      <p><strong>Doença do trabalho também entra.</strong> Lesão por esforço repetitivo, tendinite e bursite ocupacionais, perda auditiva por ruído, problemas de coluna ligados à função — quando deixam sequela que reduz a capacidade, seguem a mesma lógica do acidente.</p>
-      <p style="margin-top:14px">O que a lei cobra é a <strong>qualidade de segurado na data do acidente</strong> — não um número mínimo de contribuições.</p>
+      <p><strong>Doença do trabalho também entra.</strong> Tendinite, bursite, LER, perda de audição por barulho e problemas de coluna ligados à função seguem a mesma lógica, quando deixam sequela.</p>
+      <p style="margin-top:14px">E não existe tempo mínimo de contribuição: o que conta é você estar trabalhando com registro no dia do acidente.</p>
     </div>
-  </div>
-</section>
-
-<!-- ================= QUEM NAO TEM DIREITO ================= -->
-<section class="sec sec--tight" id="nao-tem-direito" style="background:#fff;border-top:1px solid var(--linha);border-bottom:1px solid var(--linha)">
-  <div class="wrap">
-    <p class="eyebrow">Para não perder o seu tempo</p>
-    <h2>Quando o auxílio-acidente não se aplica</h2>
-    <p class="lead" style="margin-top:20px;color:#4e6160">Tão importante quanto saber quem tem direito é saber quem não tem. Se a sua situação está numa das linhas abaixo, o caminho provavelmente é outro benefício — e vale dizer isso antes de você gastar tempo com um pedido que não vai passar.</p>
-
-    <div class="nots">
-      <div class="not">
-        <span class="not__x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M5 5l14 14M19 5L5 19"/></svg></span>
-        <div><b>Não havia qualidade de segurado no dia do acidente</b><span>Sem vínculo ativo e fora do período de graça, o INSS não estava cobrindo o risco naquele momento.</span></div>
-      </div>
-      <div class="not">
-        <span class="not__x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M5 5l14 14M19 5L5 19"/></svg></span>
-        <div><b>Contribuinte individual, MEI ou facultativo</b><span>O auxílio-acidente alcança o segurado empregado, o trabalhador avulso e o segurado especial. Autônomo, MEI e facultativo estão fora do rol da lei.</span></div>
-      </div>
-      <div class="not">
-        <span class="not__x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M5 5l14 14M19 5L5 19"/></svg></span>
-        <div><b>Recuperação total, sem sequela permanente</b><span>Dor passageira durante o tratamento não basta. É preciso que, consolidadas as lesões, tenha restado uma limitação definitiva.</span></div>
-      </div>
-      <div class="not">
-        <span class="not__x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M5 5l14 14M19 5L5 19"/></svg></span>
-        <div><b>Sequela que não interfere no trabalho</b><span>A lei exige redução da capacidade para a atividade que você exercia. Uma cicatriz que não limita nada, por exemplo, não gera direito.</span></div>
-      </div>
-      <div class="not">
-        <span class="not__x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M5 5l14 14M19 5L5 19"/></svg></span>
-        <div><b>Já está aposentado</b><span>O auxílio-acidente é devido até a véspera do início de qualquer aposentadoria, e não se acumula com ela. Situações anteriores a 11/11/1997 seguem regra própria e precisam ser conferidas no histórico.</span></div>
-      </div>
-      <div class="not">
-        <span class="not__x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M5 5l14 14M19 5L5 19"/></svg></span>
-        <div><b>Nenhum documento médico da época</b><span>Sem prontuário, laudo, exame de imagem ou registro de atendimento, fica muito difícil provar a sequela e ligá-la ao acidente. Nem sempre é impeditivo — mas muda a estratégia.</span></div>
-      </div>
-    </div>
-
-    <div class="nots__foot">
-      <p><strong>Não se reconheceu em nenhuma dessas linhas?</strong> Então o seu caso merece uma análise. Vale lembrar que muita gente se descarta sozinha por engano — principalmente quem acha que não era segurado e, no extrato do CNIS, descobre que ainda estava no período de graça.</p>
-      <a class="btn btn--outline" href="#autoteste">Fazer o autoteste</a>
-    </div>
-  </div>
-</section>
-
-<!-- ================= RETROATIVOS (assinatura) ================= -->
-<section class="sec rt" id="atrasados">
-  <div class="wrap">
-    <p class="eyebrow">Os atrasados</p>
-    <h2>O direito não nasce no dia do pedido. Ele nasce lá atrás.</h2>
-    <p class="lead" style="margin-top:20px">É por isso que muita gente descobre o auxílio-acidente junto com um valor acumulado que vinha correndo há anos sem que ninguém tivesse pedido.</p>
-
-    <div class="rails">
-      <div>
-        <p class="rail__cap">Cenário A — você recebeu auxílio-doença pelo acidente <i>o mais comum</i></p>
-        <div class="rail" data-rail style="--s:36%;--w:58%">
-          <div class="rail__track"></div><div class="rail__fill"></div>
-          <span class="rail__badge">Atrasados contam a partir daqui</span>
-          <div class="node" style="left:6%"><i></i><b>Acidente</b><span>afastamento</span></div>
-          <div class="node" style="left:36%"><i></i><b>Fim do auxílio-doença</b><span>alta médica</span><em class="node__tag">Atrasados contam daqui</em></div>
-          <div class="node is-end" style="left:94%"><i></i><b>Hoje</b><span>pedido do benefício</span></div>
-        </div>
-      </div>
-      <div>
-        <p class="rail__cap">Cenário B — você nunca se afastou pelo INSS <i>trabalhou com a sequela</i></p>
-        <div class="rail" data-rail style="--s:64%;--w:30%;--ls:6%;--lw:58%">
-          <div class="rail__track"></div>
-          <div class="rail__lost"></div><span class="rail__lostcap">tempo que não se recupera</span>
-          <div class="rail__fill"></div>
-          <span class="rail__badge">Atrasados contam a partir daqui</span>
-          <div class="node" style="left:6%"><i></i><b>Acidente</b><span>sem afastamento</span></div>
-          <div class="node" style="left:64%"><i></i><b>Requerimento</b><span>pedido ao INSS</span><em class="node__tag">Atrasados contam daqui</em></div>
-          <div class="node is-end" style="left:94%"><i></i><b>Hoje</b><span>benefício ativo</span></div>
-        </div>
-      </div>
-    </div>
-
-    <p class="rt__warn">A data em que o benefício começa a valer muda conforme o caso e é definida em lei e na jurisprudência — não é escolha do segurado. E existe um limite: os atrasados alcançam, em regra, os <strong>cinco anos anteriores</strong> ao pedido. Na prática, quanto mais o tempo passa, mais direito prescreve. Por isso a análise não deveria esperar.</p>
   </div>
 </section>
 
@@ -756,7 +483,7 @@ footer ul{list-style:none;margin:0;padding:0;display:grid;gap:11px}
   <div class="wrap">
     <p class="eyebrow">Autoteste em 4 perguntas</p>
     <h2>Seu caso se encaixa?</h2>
-    <p class="lead" style="margin-top:18px;color:#3d5150">São quatro toques, sem preencher nada. Nenhum dado é enviado ou armazenado — no fim, você decide se quer levar o resultado para o WhatsApp.</p>
+    <p class="lead" style="margin-top:18px;color:#3d5150">São quatro toques, sem preencher nada. Nenhum dado é enviado ou guardado — no fim, você decide se quer levar o resultado para o WhatsApp.</p>
 
     <div class="qbox">
       <div class="qprog" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></div>
@@ -795,7 +522,7 @@ footer ul{list-style:none;margin:0;padding:0;display:grid;gap:11px}
       <div class="qstep" data-step="3">
         <h3>Você chegou a receber auxílio-doença do INSS por causa disso?</h3>
         <div class="qopts">
-          <button type="button" class="qopt" data-v="Recebi auxílio-doença e já cessou">Sim, recebi e já cessou</button>
+          <button type="button" class="qopt" data-v="Recebi auxílio-doença e já cessou">Sim, recebi e já acabou</button>
           <button type="button" class="qopt" data-v="Estou recebendo auxílio-doença">Estou recebendo agora</button>
           <button type="button" class="qopt" data-v="Nunca recebi auxílio-doença">Nunca recebi</button>
           <button type="button" class="qopt" data-v="Não lembro se recebi auxílio-doença">Não lembro</button>
@@ -806,10 +533,7 @@ footer ul{list-style:none;margin:0;padding:0;display:grid;gap:11px}
       <div class="qstep qres" data-step="4">
         <h3 id="qtitle"></h3>
         <p id="qtext"></p>
-        <a class="btn btn--zap btn--wide" id="qzap" href="#" target="_blank" rel="noopener">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.65-2.05-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.8h-.02a9.8 9.8 0 0 1-4.99-1.37l-.36-.21-3.71.97.99-3.62-.23-.37a9.78 9.78 0 0 1-1.5-5.23c0-5.4 4.4-9.8 9.82-9.8 2.62 0 5.08 1.03 6.93 2.88a9.74 9.74 0 0 1 2.87 6.93c0 5.4-4.4 9.8-9.8 9.8M20.5 3.5A11.75 11.75 0 0 0 12.05 0C5.55 0 .26 5.29.26 11.79c0 2.08.54 4.1 1.58 5.89L.16 24l6.47-1.7a11.74 11.74 0 0 0 5.42 1.38h.01c6.5 0 11.79-5.29 11.79-11.79 0-3.15-1.23-6.11-3.46-8.34"/></svg>
-          Enviar meu caso pelo WhatsApp
-        </a>
+        <a class="btn btn--zap btn--wide" id="qzap" href="#" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.65-2.05-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.8h-.02a9.8 9.8 0 0 1-4.99-1.37l-.36-.21-3.71.97.99-3.62-.23-.37a9.78 9.78 0 0 1-1.5-5.23c0-5.4 4.4-9.8 9.82-9.8 2.62 0 5.08 1.03 6.93 2.88a9.74 9.74 0 0 1 2.87 6.93c0 5.4-4.4 9.8-9.8 9.8M20.5 3.5A11.75 11.75 0 0 0 12.05 0C5.55 0 .26 5.29.26 11.79c0 2.08.54 4.1 1.58 5.89L.16 24l6.47-1.7a11.74 11.74 0 0 0 5.42 1.38h.01c6.5 0 11.79-5.29 11.79-11.79 0-3.15-1.23-6.11-3.46-8.34"/></svg>Enviar meu caso pelo WhatsApp</a>
         <button type="button" class="qback" id="qrestart">Refazer o autoteste</button>
       </div>
       </form>
@@ -823,49 +547,32 @@ footer ul{list-style:none;margin:0;padding:0;display:grid;gap:11px}
     <p class="eyebrow">Situações que costumam gerar direito</p>
     <h2>Onde o auxílio-acidente mais aparece</h2>
     <div class="cases">
-      <div class="case"><b>Acidente de trânsito</b><span>Fraturas em perna, braço, quadril ou coluna com placas, pinos ou movimento limitado.</span></div>
-      <div class="case"><b>Perda auditiva por ruído</b><span>Anos de exposição a ruído em indústria, mineração, construção ou transporte.</span></div>
-      <div class="case"><b>Lesões de ombro e joelho</b><span>Rupturas de manguito rotador, lesões de menisco e ligamentos que não voltaram ao normal.</span></div>
-      <div class="case"><b>LER / DORT</b><span>Tendinite, bursite, epicondilite e síndrome do túnel do carpo ligadas à função exercida.</span></div>
-      <div class="case"><b>Amputações e perdas parciais</b><span>Dedos, mão, pé, ou perda de função de um membro, inclusive em acidentes fora do trabalho.</span></div>
-      <div class="case"><b>Perda de visão</b><span>Redução da visão de um olho por trauma, corpo estranho ou queimadura química.</span></div>
-      <div class="case"><b>Problemas de coluna</b><span>Hérnias e alterações degenerativas agravadas pela atividade, com limitação permanente.</span></div>
-      <div class="case"><b>Queimaduras e cicatrizes</b><span>Retrações e cicatrizes que limitam movimento ou o contato com o público.</span></div>
-      <div class="case"><b>Quedas e acidentes domésticos</b><span>Aquele acidente "bobo" em casa que deixou sequela — e que também pode gerar direito.</span></div>
+      <div class="case"><b>Acidente de trânsito</b><span>Fratura em perna, braço, quadril ou coluna, com placa, pino ou movimento que não voltou ao normal.</span></div>
+      <div class="case"><b>Perda de audição</b><span>Anos ouvindo barulho alto em indústria, mineração, obra ou transporte.</span></div>
+      <div class="case"><b>Ombro e joelho</b><span>Lesão no manguito rotador, no menisco ou nos ligamentos que deixou limitação depois da cirurgia ou do tratamento.</span></div>
+      <div class="case"><b>LER, tendinite e bursite</b><span>Dor no punho, no cotovelo ou no ombro causada pelo esforço repetido da própria função.</span></div>
+      <div class="case"><b>Amputações e perdas parciais</b><span>Dedo, mão ou pé, ou perda de movimento de um membro — inclusive em acidente fora do trabalho.</span></div>
+      <div class="case"><b>Quedas em casa</b><span>Aquele acidente "bobo" dentro de casa que deixou sequela e que também pode gerar direito.</span></div>
     </div>
-    <p style="margin-top:34px;font-size:16px;color:#4e6160;max-width:70ch">Esta lista é ilustrativa. O que define o direito não é o diagnóstico, e sim a sequela e o quanto ela reduz a capacidade para a função que você exercia — o que precisa ser analisado caso a caso.</p>
+    <p style="margin-top:32px;font-size:16px;color:#4e6160;max-width:68ch">A lista é só de exemplo. O que decide não é o nome da doença, e sim a sequela que ficou e o quanto ela atrapalha o trabalho que você fazia.</p>
   </div>
 </section>
 
 <!-- ================= INSS NEGOU ================= -->
 <section class="sec deny" id="negativa">
   <div class="wrap">
-    <div class="grid">
-      <div>
-        <p class="eyebrow">Se já houve negativa</p>
-        <h2>O INSS negou. Isso não encerra o assunto.</h2>
-        <p style="margin-top:20px">A negativa em auxílio-acidente costuma ter sempre a mesma origem: a perícia registra que houve tratamento e alta, mas não descreve a sequela nem o quanto ela reduz a capacidade para a função exercida. O laudo sai genérico e o pedido cai.</p>
-        <p>Quando isso acontece, o caminho não é refazer o mesmo pedido do mesmo jeito. É reconstruir a prova — laudo particular detalhado, exames de imagem, descrição real da função — e escolher entre recurso administrativo ou ação judicial, conforme o que o processo já tem.</p>
-        <p style="font-size:15.5px;color:rgba(247,229,203,.62)">Nenhum caminho garante resultado: o desfecho depende da prova e da perícia. O que dá para fazer é apresentar o caso da forma tecnicamente correta.</p>
-      </div>
-      <div class="paths">
-        <div class="path"><b>Recurso à Junta de Recursos</b><span>Cabível em 30 dias contados da ciência da decisão. Permite reapresentar documentos e questionar o laudo pericial dentro do próprio INSS.</span></div>
-        <div class="path"><b>Novo requerimento instruído</b><span>Em alguns casos vale um pedido novo, agora com a documentação médica organizada e a sequela bem descrita, em vez de recorrer.</span></div>
-        <div class="path"><b>Ação no Juizado Especial Federal</b><span>Para causas de até 60 salários mínimos, com perícia judicial feita por profissional nomeado pelo juízo. Tramita na Justiça Federal do seu domicílio, mesmo com o escritório atendendo de outro estado.</span></div>
-        <div class="path"><b>Ação na Justiça Federal comum</b><span>Quando o valor da causa supera o limite do Juizado ou o caso exige instrução mais ampla.</span></div>
-      </div>
-    </div>
-    <div style="margin-top:44px">
-      <a class="btn btn--zap" href="__WA_DENY__" target="_blank" rel="noopener">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.65-2.05-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.8h-.02a9.8 9.8 0 0 1-4.99-1.37l-.36-.21-3.71.97.99-3.62-.23-.37a9.78 9.78 0 0 1-1.5-5.23c0-5.4 4.4-9.8 9.82-9.8 2.62 0 5.08 1.03 6.93 2.88a9.74 9.74 0 0 1 2.87 6.93c0 5.4-4.4 9.8-9.8 9.8M20.5 3.5A11.75 11.75 0 0 0 12.05 0C5.55 0 .26 5.29.26 11.79c0 2.08.54 4.1 1.58 5.89L.16 24l6.47-1.7a11.74 11.74 0 0 0 5.42 1.38h.01c6.5 0 11.79-5.29 11.79-11.79 0-3.15-1.23-6.11-3.46-8.34"/></svg>
-        Enviar a carta de negativa para análise
-      </a>
+    <p class="eyebrow">Se já houve negativa</p>
+    <h2>O INSS negou. Isso não encerra o assunto.</h2>
+    <p style="margin-top:20px">A negativa quase sempre nasce do mesmo lugar: o perito anota que houve tratamento e alta, mas não descreve a sequela nem o quanto ela atrapalha o seu trabalho. O laudo sai vago e o pedido cai.</p>
+    <p>Nesse caso não adianta repetir o mesmo pedido do mesmo jeito. É preciso remontar a prova e decidir entre recorrer dentro do próprio INSS, com prazo de 30 dias, ou entrar com ação na Justiça. O caminho depende do que o seu processo já tem.</p>
+    <div style="margin-top:34px">
+      <a class="btn btn--zap" href="__WA_DENY__" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.65-2.05-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.8h-.02a9.8 9.8 0 0 1-4.99-1.37l-.36-.21-3.71.97.99-3.62-.23-.37a9.78 9.78 0 0 1-1.5-5.23c0-5.4 4.4-9.8 9.82-9.8 2.62 0 5.08 1.03 6.93 2.88a9.74 9.74 0 0 1 2.87 6.93c0 5.4-4.4 9.8-9.8 9.8M20.5 3.5A11.75 11.75 0 0 0 12.05 0C5.55 0 .26 5.29.26 11.79c0 2.08.54 4.1 1.58 5.89L.16 24l6.47-1.7a11.74 11.74 0 0 0 5.42 1.38h.01c6.5 0 11.79-5.29 11.79-11.79 0-3.15-1.23-6.11-3.46-8.34"/></svg>Enviar a carta de negativa</a>
     </div>
   </div>
 </section>
 
 <!-- ================= COMO FUNCIONA ================= -->
-<section class="sec sec--tight" style="background:#fff;border-top:1px solid var(--linha);border-bottom:1px solid var(--linha)">
+<section class="sec sec--tight" id="como-funciona" style="background:#fff;border-top:1px solid var(--linha);border-bottom:1px solid var(--linha)">
   <div class="wrap">
     <p class="eyebrow">Como funciona o atendimento</p>
     <h2>Do primeiro contato ao pedido, sem sair de casa</h2>
@@ -875,72 +582,16 @@ footer ul{list-style:none;margin:0;padding:0;display:grid;gap:11px}
         <p>Você conta o que aconteceu pelo WhatsApp. Nada de formulário: fala direto com o escritório.</p>
       </div>
       <div class="step">
-        <h3>Análise dos documentos</h3>
-        <p>Você envia por foto o que tiver: laudos, exames, receitas, boletim de ocorrência, CNIS, carteira de trabalho.</p>
+        <h3>Envio dos documentos</h3>
+        <p>Manda por foto o que tiver: laudos, exames, receitas, boletim de ocorrência e carteira de trabalho.</p>
       </div>
       <div class="step">
         <h3>Estratégia do caso</h3>
-        <p>Definimos juntos se o caminho é o requerimento administrativo, o recurso ou a ação judicial — e o que esperar de cada um.</p>
+        <p>Definimos juntos o melhor caminho — pedido no INSS, recurso ou ação — e o que esperar de cada um.</p>
       </div>
       <div class="step">
-        <h3>Condução até o fim</h3>
-        <p>Protocolo, acompanhamento da perícia, prazos e recursos. Você é avisado a cada movimentação.</p>
-      </div>
-    </div>
-
-    <div style="margin-top:72px">
-      <p class="eyebrow">O que precisa ficar provado</p>
-      <h3 style="font-size:clamp(23px,3vw,30px);color:var(--verde-esc);max-width:26ch">Três pontos decidem o pedido — e é neles que a maioria dos casos se perde</h3>
-      <div class="proof">
-        <div class="pf"><b>Que houve o acidente ou a doença</b><span>Boletim de ocorrência, CAT, prontuário, atendimento de urgência, exames da época. É o que ancora a data e dá ao INSS um marco temporal.</span></div>
-        <div class="pf"><b>Que restou sequela permanente</b><span>Laudo que descreva a sequela depois da consolidação das lesões, com exame de imagem, grau de limitação e não apenas o diagnóstico ou o CID.</span></div>
-        <div class="pf"><b>Que ela reduz a sua capacidade</b><span>O ponto mais negligenciado. É preciso ligar a sequela à função concreta que você exercia — o que você fazia, com que esforço, e o que deixou de conseguir fazer do mesmo jeito.</span></div>
-      </div>
-      <p style="margin-top:28px;font-size:16px;color:#4e6160;max-width:72ch">Perícia do INSS costuma ser rápida. Quando a documentação já chega organizada e a sequela está descrita com clareza, o perito tem menos margem para registrar um laudo genérico.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ================= TODO O BRASIL ================= -->
-<section class="sec br">
-  <div class="wrap">
-    <p class="eyebrow eyebrow--c" style="justify-content:center">Atendimento nacional</p>
-    <h2>Seu processo não depende de você morar perto do escritório</h2>
-    <p>O atendimento é 100% online, de qualquer estado. Ações previdenciárias tramitam eletronicamente e a competência é definida pelo seu domicílio — ou seja, o processo corre na Justiça Federal da sua cidade ou região, com o escritório atuando de Belo Horizonte.</p>
-    <div class="brgrid">
-      <div><b>Conversa por WhatsApp e vídeo</b><span>Do primeiro contato ao acompanhamento do processo, sem deslocamento e sem horário de balcão.</span></div>
-      <div><b>Documentos por foto</b><span>Laudos, exames, carteira de trabalho e carta de negativa podem ser enviados pelo celular. A procuração é assinada digitalmente.</span></div>
-      <div><b>Perícia na sua cidade</b><span>A perícia médica, administrativa ou judicial, é marcada na sua região. Você é orientado antes sobre o que levar e o que dizer.</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= AVALIAÇÕES GOOGLE ================= -->
-<section class="sec" id="avaliacoes">
-  <div class="wrap">
-    <p class="eyebrow">Avaliações no Google</p>
-    <h2>O que dizem quem já foi atendido</h2>
-
-    <div class="gwrap">
-      <div class="gcard">
-        <div class="glogo">
-          <svg width="20" height="20" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.1 24.5c0-1.6-.1-2.7-.4-4H24v7.3h12.1c-.2 1.9-1.6 4.9-4.5 6.9l6.9 5.4c4.1-3.8 6.6-9.4 6.6-15.6"/><path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.3l-6.9-5.4c-1.9 1.3-4.4 2.2-7.6 2.2-5.8 0-10.7-3.8-12.5-9.1l-7.1 5.5C8.1 41.1 15.4 46 24 46"/><path fill="#FBBC05" d="M11.5 28.4c-.5-1.4-.7-2.9-.7-4.4s.3-3 .7-4.4l-7.1-5.6C2.9 16.9 2 20.3 2 24s.9 7.1 2.4 10z"/><path fill="#EA4335" d="M24 10.3c4.1 0 6.9 1.8 8.5 3.3l6.2-6C34.9 4.1 29.9 2 24 2 15.4 2 8.1 6.9 4.4 14l7.1 5.6c1.8-5.3 6.7-9.3 12.5-9.3"/></svg>
-          Google
-        </div>
-        <div class="gscore" id="gscore">5,0</div>
-        <div class="gstars" aria-hidden="true">★★★★★</div>
-        <div class="gcount" id="gcount">Avaliações verificadas de clientes</div>
-        <a class="btn btn--outline btn--wide" id="glink" href="https://www.google.com/search?q=K%C3%AAnia+Portilho+Advocacia+Previdenci%C3%A1ria" target="_blank" rel="noopener">Ler as avaliações no Google</a>
-      </div>
-
-      <div class="greviews" id="greviews">
-        <!-- =========================================================
-             AVALIAÇÕES DO GOOGLE
-             Cole abaixo, no array AVALIACOES do script no fim da página,
-             o texto real das avaliações que já estão publicadas no seu
-             perfil do Google. Enquanto o array estiver vazio, aparece
-             apenas o convite para ler as avaliações direto no Google.
-             ========================================================= -->
+        <h3>Acompanhamento até o fim</h3>
+        <p>Protocolo, preparo para a perícia, prazos e recursos. Você é avisado a cada movimentação.</p>
       </div>
     </div>
   </div>
@@ -955,8 +606,7 @@ footer ul{list-style:none;margin:0;padding:0;display:grid;gap:11px}
         <p class="eyebrow">Quem vai cuidar do seu caso</p>
         <h2>Kênia Portilho</h2>
         <p style="margin-top:20px">Advogada, pós-graduada em Direito Privado, Trabalhista e Previdenciário e membro da Comissão de Direito Previdenciário da OAB/MG. São mais de 13 anos dedicados exclusivamente a benefícios do INSS.</p>
-        <p>O atendimento é direto com a advogada, por WhatsApp, videochamada e e-mail — sem intermediários e sem necessidade de deslocamento. O escritório atende segurados de todo o Brasil, tanto na esfera administrativa quanto na judicial.</p>
-        <p>Cada caso começa pela mesma pergunta: o que a sua sequela realmente mudou no seu trabalho? É essa resposta, documentada corretamente, que sustenta o pedido diante da perícia do INSS.</p>
+        <p>O atendimento do escritório é realizado por WhatsApp e videochamada, sem necessidade de deslocamento.</p>
         <span class="oab">OAB/MG 142.724</span>
       </div>
     </div>
@@ -970,52 +620,44 @@ footer ul{list-style:none;margin:0;padding:0;display:grid;gap:11px}
     <h2>O que as pessoas mais perguntam</h2>
     <div class="faq">
       <details open>
-        <summary>Preciso parar de trabalhar para receber o auxílio-acidente?</summary>
-        <div class="a"><p>Não. O auxílio-acidente tem natureza indenizatória: a própria lei diz que ele é devido independentemente de qualquer remuneração que o segurado esteja recebendo. Você pode continuar no mesmo emprego, trocar de emprego ou abrir um negócio, e o benefício continua.</p></div>
+        <summary>Preciso parar de trabalhar para receber?</summary>
+        <div class="a"><p>Não. A própria lei diz que esse benefício é devido mesmo que você esteja recebendo salário. Pode continuar no mesmo emprego, trocar de emprego ou abrir um negócio, que ele continua caindo.</p></div>
       </details>
       <details>
         <summary>O acidente precisa ter sido no trabalho?</summary>
-        <div class="a"><p>Não. A lei fala em acidente de qualquer natureza. Vale acidente de trânsito, queda em casa, acidente no lazer, agressão. O que importa é ter ficado sequela que reduza a capacidade para o trabalho que você exercia, e ser segurado na data do acidente.</p></div>
+        <div class="a"><p>Não. Vale acidente de trânsito, queda em casa, acidente no lazer, agressão. O que importa é ter ficado uma sequela que atrapalhe o seu trabalho e você estar trabalhando com registro quando o acidente aconteceu.</p></div>
       </details>
       <details>
         <summary>Quanto tempo de contribuição eu preciso ter?</summary>
-        <div class="a"><p>Não existe número mínimo de contribuições para o auxílio-acidente. O que a lei exige é que você tivesse a qualidade de segurado na data do acidente — trabalhando com registro, ou dentro do período de graça.</p></div>
+        <div class="a"><p>Não existe número mínimo de contribuições para esse benefício. Mesmo com pouco tempo de trabalho registrado o direito pode existir, desde que você estivesse segurado no dia do acidente.</p></div>
       </details>
       <details>
-        <summary>Sou autônomo, MEI ou contribuinte facultativo. Tenho direito?</summary>
-        <div class="a"><p>Não. O auxílio-acidente é destinado ao segurado empregado, ao trabalhador avulso e ao segurado especial. Contribuinte individual, MEI e facultativo estão fora do rol previsto na lei. Se você tinha vínculo de emprego em outro período, porém, vale conferir o CNIS: o que importa é a sua condição na data do acidente.</p></div>
+        <summary>Sou autônomo, MEI ou pago como facultativo. Tenho direito?</summary>
+        <div class="a"><p>Nesses casos, não. O auxílio-acidente é para quem trabalha de carteira assinada, para o trabalhador avulso e para o trabalhador rural. Mas se você já teve carteira assinada em outra época, vale conferir: o que importa é a sua situação no dia do acidente.</p></div>
       </details>
       <details>
         <summary>Recebi seguro-desemprego. Ainda estava segurado?</summary>
-        <div class="a"><p>Provavelmente sim. Quem está em situação de desemprego comprovada pode ter o período de graça estendido, chegando a até 24 meses após a última contribuição. Muita gente descarta o próprio caso por não saber disso.</p></div>
-      </details>
-      <details>
-        <summary>O auxílio-acidente aumenta a minha aposentadoria depois?</summary>
-        <div class="a"><p>O artigo 31 da Lei 8.213/91 prevê que o valor mensal do auxílio-acidente integra o salário de contribuição para o cálculo do salário de benefício de qualquer aposentadoria. O efeito concreto depende do seu histórico contributivo e da regra de cálculo aplicável ao seu caso.</p></div>
+        <div class="a"><p>Provavelmente sim. Quem está desempregado e consegue comprovar isso continua protegido pelo INSS por mais tempo — pode chegar a 24 meses depois da última contribuição. Muita gente desiste do próprio caso sem saber disso.</p></div>
       </details>
       <details>
         <summary>Já faz anos que sofri o acidente. Ainda dá tempo?</summary>
-        <div class="a"><p>O direito ao benefício em si não desaparece com o tempo, mas as parcelas atrasadas prescrevem: em regra, só é possível cobrar os cinco anos anteriores ao pedido. Ou seja, esperar não impede o benefício, mas reduz o que dá para receber de trás.</p></div>
+        <div class="a"><p>O direito ao benefício em si não some com o tempo, mas as parcelas antigas sim: em regra só dá para cobrar os cinco anos anteriores ao pedido. Ou seja, esperar não impede o benefício, mas diminui o que você recebe de trás.</p></div>
       </details>
       <details>
         <summary>Posso receber junto com a aposentadoria?</summary>
-        <div class="a"><p>Em regra, não. O auxílio-acidente é pago até a véspera do início de qualquer aposentadoria, e o valor recebido entra no cálculo do salário de contribuição. Há situações antigas específicas em que a acumulação foi admitida — isso precisa ser verificado no seu histórico.</p></div>
+        <div class="a"><p>Em regra não. O auxílio-acidente é pago até a véspera do início de qualquer aposentadoria. Existem situações antigas específicas em que a soma foi permitida, e isso precisa ser conferido no seu histórico.</p></div>
       </details>
       <details>
-        <summary>E se eu recebo ou recebi auxílio-doença?</summary>
-        <div class="a"><p>Esse é justamente o caminho mais comum. Ao cessar o auxílio-doença, se restou sequela que reduz a capacidade, o INSS deveria converter em auxílio-acidente — e muitas vezes não converte. Quando isso acontece, cabe pedido, recurso ou ação, com os valores contados desde o dia seguinte à cessação.</p></div>
-      </details>
-      <details>
-        <summary>O INSS já negou o meu pedido. Acabou?</summary>
-        <div class="a"><p>Não. A negativa administrativa é comum, especialmente quando a perícia não registra bem a sequela. Cabe recurso à Junta de Recursos e, conforme o caso, ação judicial, inclusive no Juizado Especial Federal.</p></div>
+        <summary>E se eu recebo ou já recebi auxílio-doença?</summary>
+        <div class="a"><p>Esse é o caminho mais comum. Quando o auxílio-doença acaba e sobra sequela que atrapalha o trabalho, o INSS deveria transformar o benefício em auxílio-acidente — e muitas vezes não transforma. Quando isso acontece, cabe pedido, recurso ou ação, contando os valores desde o dia seguinte ao fim do auxílio-doença.</p></div>
       </details>
       <details>
         <summary>Quanto tempo demora?</summary>
-        <div class="a"><p>Não há prazo único. Na via administrativa, o INSS tem prazo legal para decidir, mas ele varia conforme a agência e a fila de perícia. Na via judicial, o tempo depende da vara, da nomeação do perito e do calendário de audiências. Qualquer promessa de prazo fechado em previdenciário deve ser vista com desconfiança.</p></div>
+        <div class="a"><p>Não há prazo único. No INSS depende da agência e da fila de perícia. Na Justiça depende da vara e da marcação do perito. Qualquer promessa de prazo fechado em caso previdenciário deve ser vista com desconfiança.</p></div>
       </details>
       <details>
-        <summary>Como funciona o atendimento sendo tudo online?</summary>
-        <div class="a"><p>Toda a comunicação acontece por WhatsApp, videochamada e e-mail. Documentos podem ser enviados por foto e a procuração é assinada digitalmente. O escritório atua para segurados de qualquer estado, com o processo tramitando na Justiça Federal do seu domicílio.</p></div>
+        <summary>Como funciona sendo tudo online?</summary>
+        <div class="a"><p>A conversa acontece por WhatsApp e videochamada. Os documentos podem ser enviados por foto e a procuração é assinada digitalmente, pelo celular mesmo.</p></div>
       </details>
     </div>
   </div>
@@ -1026,14 +668,8 @@ footer ul{list-style:none;margin:0;padding:0;display:grid;gap:11px}
   <div class="wrap">
     <p class="eyebrow eyebrow--c" style="justify-content:center">Análise do seu caso</p>
     <h2>Descobrir se você tem direito leva uma conversa</h2>
-    <p>Se você ficou com sequela de um acidente ou de uma doença ligada ao trabalho, mande uma mensagem contando o que aconteceu. A partir daí a gente vê o que os seus documentos mostram.</p>
-    <div class="final__ctas">
-      <a class="btn btn--zap" href="__WA_FINAL__" target="_blank" rel="noopener">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.65-2.05-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.8h-.02a9.8 9.8 0 0 1-4.99-1.37l-.36-.21-3.71.97.99-3.62-.23-.37a9.78 9.78 0 0 1-1.5-5.23c0-5.4 4.4-9.8 9.82-9.8 2.62 0 5.08 1.03 6.93 2.88a9.74 9.74 0 0 1 2.87 6.93c0 5.4-4.4 9.8-9.8 9.8M20.5 3.5A11.75 11.75 0 0 0 12.05 0C5.55 0 .26 5.29.26 11.79c0 2.08.54 4.1 1.58 5.89L.16 24l6.47-1.7a11.74 11.74 0 0 0 5.42 1.38h.01c6.5 0 11.79-5.29 11.79-11.79 0-3.15-1.23-6.11-3.46-8.34"/></svg>
-        Falar agora no WhatsApp
-      </a>
-      <a class="btn btn--ghost" href="mailto:keniaportilhoadv@gmail.com?subject=Aux%C3%ADlio-acidente%20%E2%80%94%20an%C3%A1lise%20de%20caso">Escrever por e-mail</a>
-    </div>
+    <p>Se você ficou com sequela de um acidente ou de uma doença ligada ao trabalho, mande uma mensagem contando o que aconteceu.</p>
+    <a class="btn btn--zap" href="__WA_FINAL__" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.65-2.05-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.8h-.02a9.8 9.8 0 0 1-4.99-1.37l-.36-.21-3.71.97.99-3.62-.23-.37a9.78 9.78 0 0 1-1.5-5.23c0-5.4 4.4-9.8 9.82-9.8 2.62 0 5.08 1.03 6.93 2.88a9.74 9.74 0 0 1 2.87 6.93c0 5.4-4.4 9.8-9.8 9.8M20.5 3.5A11.75 11.75 0 0 0 12.05 0C5.55 0 .26 5.29.26 11.79c0 2.08.54 4.1 1.58 5.89L.16 24l6.47-1.7a11.74 11.74 0 0 0 5.42 1.38h.01c6.5 0 11.79-5.29 11.79-11.79 0-3.15-1.23-6.11-3.46-8.34"/></svg>Falar agora no WhatsApp</a>
   </div>
 </section>
 
@@ -1049,7 +685,6 @@ footer ul{list-style:none;margin:0;padding:0;display:grid;gap:11px}
         <h4>Contato</h4>
         <ul>
           <li><a href="__WA_FOOTER__" target="_blank" rel="noopener">WhatsApp (31) 99556-5510</a></li>
-          <li><a href="mailto:keniaportilhoadv@gmail.com">keniaportilhoadv@gmail.com</a></li>
           <li><a href="https://www.instagram.com/keniaportilho.advocacia/" target="_blank" rel="noopener">@keniaportilho.advocacia</a></li>
           <li><a href="https://keniaportilho.com.br" target="_blank" rel="noopener">keniaportilho.com.br</a></li>
         </ul>
@@ -1057,7 +692,7 @@ footer ul{list-style:none;margin:0;padding:0;display:grid;gap:11px}
       <div>
         <h4>Escritório</h4>
         <p>Avenida Getúlio Vargas, nº 668, sala 801<br>Funcionários — Belo Horizonte/MG</p>
-        <p style="font-size:14px;color:rgba(247,229,203,.55)">Atendimento exclusivamente online, para todo o Brasil. O endereço é sede administrativa e não recebe atendimento presencial.</p>
+        <p style="font-size:14px;color:rgba(247,229,203,.55)">Atendimento exclusivamente online. O endereço é sede administrativa e não recebe atendimento presencial.</p>
       </div>
     </div>
     <div class="fbot">
@@ -1067,15 +702,9 @@ footer ul{list-style:none;margin:0;padding:0;display:grid;gap:11px}
   </div>
 </footer>
 
-<!-- Botão flutuante / barra fixa -->
-<a class="float" href="__WA_FLOAT__" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
-  <svg width="30" height="30" viewBox="0 0 24 24" fill="#06301A" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.65-2.05-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.8h-.02a9.8 9.8 0 0 1-4.99-1.37l-.36-.21-3.71.97.99-3.62-.23-.37a9.78 9.78 0 0 1-1.5-5.23c0-5.4 4.4-9.8 9.82-9.8 2.62 0 5.08 1.03 6.93 2.88a9.74 9.74 0 0 1 2.87 6.93c0 5.4-4.4 9.8-9.8 9.8M20.5 3.5A11.75 11.75 0 0 0 12.05 0C5.55 0 .26 5.29.26 11.79c0 2.08.54 4.1 1.58 5.89L.16 24l6.47-1.7a11.74 11.74 0 0 0 5.42 1.38h.01c6.5 0 11.79-5.29 11.79-11.79 0-3.15-1.23-6.11-3.46-8.34"/></svg>
-</a>
+<a class="float" href="__WA_FLOAT__" target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg width="30" height="30" viewBox="0 0 24 24" fill="#06301A" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.65-2.05-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.8h-.02a9.8 9.8 0 0 1-4.99-1.37l-.36-.21-3.71.97.99-3.62-.23-.37a9.78 9.78 0 0 1-1.5-5.23c0-5.4 4.4-9.8 9.82-9.8 2.62 0 5.08 1.03 6.93 2.88a9.74 9.74 0 0 1 2.87 6.93c0 5.4-4.4 9.8-9.8 9.8M20.5 3.5A11.75 11.75 0 0 0 12.05 0C5.55 0 .26 5.29.26 11.79c0 2.08.54 4.1 1.58 5.89L.16 24l6.47-1.7a11.74 11.74 0 0 0 5.42 1.38h.01c6.5 0 11.79-5.29 11.79-11.79 0-3.15-1.23-6.11-3.46-8.34"/></svg></a>
 <div class="dock">
-  <a class="btn btn--zap btn--wide" href="__WA_DOCK__" target="_blank" rel="noopener">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.65-2.05-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.8h-.02a9.8 9.8 0 0 1-4.99-1.37l-.36-.21-3.71.97.99-3.62-.23-.37a9.78 9.78 0 0 1-1.5-5.23c0-5.4 4.4-9.8 9.82-9.8 2.62 0 5.08 1.03 6.93 2.88a9.74 9.74 0 0 1 2.87 6.93c0 5.4-4.4 9.8-9.8 9.8M20.5 3.5A11.75 11.75 0 0 0 12.05 0C5.55 0 .26 5.29.26 11.79c0 2.08.54 4.1 1.58 5.89L.16 24l6.47-1.7a11.74 11.74 0 0 0 5.42 1.38h.01c6.5 0 11.79-5.29 11.79-11.79 0-3.15-1.23-6.11-3.46-8.34"/></svg>
-    Falar no WhatsApp
-  </a>
+  <a class="btn btn--zap btn--wide" href="__WA_DOCK__" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.65-2.05-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.8h-.02a9.8 9.8 0 0 1-4.99-1.37l-.36-.21-3.71.97.99-3.62-.23-.37a9.78 9.78 0 0 1-1.5-5.23c0-5.4 4.4-9.8 9.82-9.8 2.62 0 5.08 1.03 6.93 2.88a9.74 9.74 0 0 1 2.87 6.93c0 5.4-4.4 9.8-9.8 9.8M20.5 3.5A11.75 11.75 0 0 0 12.05 0C5.55 0 .26 5.29.26 11.79c0 2.08.54 4.1 1.58 5.89L.16 24l6.47-1.7a11.74 11.74 0 0 0 5.42 1.38h.01c6.5 0 11.79-5.29 11.79-11.79 0-3.15-1.23-6.11-3.46-8.34"/></svg>Falar no WhatsApp</a>
 </div>
 
 <script>
@@ -1086,34 +715,15 @@ var CONFIG = {
   whatsapp: "5531995565510",
 
   /* MEDIÇÃO
-     A tag do Google (AW-18412566309) já está instalada no <head> da página.
-     Aqui ficam só os complementos:                                        */
+     A tag do Google Ads (AW-18412566309) está instalada no <head>.
+     O rótulo abaixo é o da ação de conversão "Contato".               */
   adsConversionId:  "AW-18412566309",
-  adsConversionLbl: "5JCNCIDzuugcEKXu5ctE",  /* rótulo da ação "Contato"
-                             "Clique WhatsApp" do Google Ads. Sem ele, o
-                             clique é registrado como evento, mas NÃO conta
-                             como conversão na campanha.                   */
-  ga4Id:            "",   /* opcional: "G-XXXXXXXXXX" do Analytics 4      */
-
-
-  /* Link do seu perfil no Google (Perfil da Empresa) para o botão
-     "Ler as avaliações no Google". Substitua pelo link curto do seu perfil. */
-  googleUrl: "https://www.google.com/search?q=K%C3%AAnia+Portilho+Advocacia+Previdenci%C3%A1ria",
-
-  /* Nota e quantidade exibidas no cartão do Google.
-     Preencha com os números reais do seu perfil. */
-  googleNota: "5,0",
-  googleQtd: "",   /* ex.: "38 avaliações" — deixe vazio para ocultar a contagem */
-
-  /* AVALIAÇÕES REAIS DO GOOGLE
-     Copie do seu perfil e cole aqui. Não invente nem edite o texto do cliente.
-     Ex.: { nome:"Maria S.", quando:"há 2 meses", texto:"..." }            */
-  avaliacoes: [
-  ]
+  adsConversionLbl: "5JCNCIDzuugcEKXu5ctE",
+  ga4Id:            ""    /* opcional: "G-XXXXXXXXXX" do Analytics 4   */
 };
 
 /* =====================================================================
-   WhatsApp — mensagens de contexto por origem do clique
+   WhatsApp — mensagem de contexto conforme o botão clicado
    ===================================================================== */
 (function(){
   var msgs = {
@@ -1134,69 +744,29 @@ var CONFIG = {
 })();
 
 /* =====================================================================
-   Medição — carrega o gtag só se houver ID configurado
+   Medição — a tag do Google Ads carrega no <head>.
+   Aqui só acrescentamos o Analytics 4, se o ID for preenchido.
    ===================================================================== */
 (function(){
-  /* A tag base já foi carregada no <head>. Aqui só registramos o GA4,
-     caso você preencha o ID dele mais tarde. */
-  if(CONFIG.ga4Id && typeof window.gtag === 'function'){
-    gtag('config', CONFIG.ga4Id);
-  }
+  if(!CONFIG.ga4Id || typeof window.gtag !== 'function') return;
+  var sc = document.createElement('script');
+  sc.async = true;
+  sc.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(CONFIG.ga4Id);
+  document.head.appendChild(sc);
+  gtag('config', CONFIG.ga4Id);
 })();
 
-/* Todo clique em link do WhatsApp vira evento — o atributo data-origem
-   identifica de qual bloco da página o clique partiu.                   */
+/* Todo clique em link do WhatsApp vira evento e conversão.
+   O atributo data-origem identifica de qual bloco partiu o clique.     */
 (function(){
   document.addEventListener('click', function(ev){
     var a = ev.target.closest && ev.target.closest('a[href*="wa.me/"]');
     if(!a || typeof window.gtag !== 'function') return;
-    var origem = a.getAttribute('data-origem') || 'nao-identificado';
-    gtag('event', 'contato_whatsapp', { origem: origem });
+    gtag('event', 'contato_whatsapp', { origem: a.getAttribute('data-origem') || 'nao-identificado' });
     if(CONFIG.adsConversionId && CONFIG.adsConversionLbl){
-      gtag('event', 'conversion', {
-        send_to: CONFIG.adsConversionId + '/' + CONFIG.adsConversionLbl
-      });
+      gtag('event', 'conversion', { send_to: CONFIG.adsConversionId + '/' + CONFIG.adsConversionLbl });
     }
   }, true);
-})();
-
-/* =====================================================================
-   Avaliações do Google
-   ===================================================================== */
-(function(){
-  var box = document.getElementById('greviews');
-  document.getElementById('gscore').textContent = CONFIG.googleNota;
-  document.getElementById('glink').href = CONFIG.googleUrl;
-  ['hnota','tnota'].forEach(function(id){
-    var el = document.getElementById(id); if(el) el.textContent = CONFIG.googleNota;
-  });
-  var gb = document.getElementById('gbadge'); if(gb) gb.href = CONFIG.googleUrl;
-  var c = document.getElementById('gcount');
-  c.textContent = CONFIG.googleQtd ? CONFIG.googleQtd : "Avaliações verificadas de clientes";
-
-  if(!CONFIG.avaliacoes.length){
-    box.innerHTML = '<div class="gempty">As avaliações ficam publicadas no perfil do escritório no Google, onde podem ser conferidas por qualquer pessoa, com o nome de quem escreveu e a data.<br><br>'+
-      '<a href="'+CONFIG.googleUrl+'" target="_blank" rel="noopener" style="color:var(--verde);font-weight:700">Abrir o perfil no Google &rarr;</a></div>';
-    return;
-  }
-  box.innerHTML = CONFIG.avaliacoes.map(function(r){
-    var ini = (r.nome||"?").trim().charAt(0).toUpperCase();
-    return '<article class="grev"><div class="grev__top"><span class="gav" aria-hidden="true">'+ini+'</span>'+
-      '<div><b>'+r.nome+'</b><span>'+(r.quando||'')+' · <span style="color:#F4B400">★★★★★</span></span></div></div>'+
-      '<p>'+r.texto+'</p></article>';
-  }).join('');
-})();
-
-/* =====================================================================
-   Linha do tempo dos retroativos — preenchimento ao entrar na tela
-   ===================================================================== */
-(function(){
-  var rails = document.querySelectorAll('[data-rail]');
-  if(!('IntersectionObserver' in window)){ rails.forEach(function(r){r.classList.add('on')}); return; }
-  var io = new IntersectionObserver(function(es){
-    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('on'); io.unobserve(e.target); } });
-  },{threshold:.4});
-  rails.forEach(function(r){ io.observe(r); });
 })();
 
 /* =====================================================================
@@ -1217,8 +787,7 @@ var CONFIG = {
   document.querySelectorAll('.qopt').forEach(function(btn){
     btn.addEventListener('click', function(){
       resp[i] = btn.getAttribute('data-v');
-      if(i < 3){ show(i+1); }
-      else { resultado(); }
+      if(i < 3){ show(i+1); } else { resultado(); }
     });
   });
 
@@ -1235,18 +804,17 @@ var CONFIG = {
     var semSequela = resp[0] === "Não ficou sequela";
     var semVinculo = resp[1] === "Não estava trabalhando com registro";
     var semImpacto = resp[2] === "Não atrapalha o trabalho";
-
     var titulo, texto;
 
     if(semSequela && semImpacto){
-      titulo = "Pelo que você respondeu, o auxílio-acidente provavelmente não se aplica";
-      texto  = "O benefício exige uma sequela permanente que reduza a capacidade para o trabalho. Se houve recuperação completa, esse requisito não se cumpre. Ainda assim, se você teve afastamento pelo INSS ou tem dúvida sobre outro benefício, vale mandar mensagem: pode haver outro direito no seu histórico.";
+      titulo = "Pelo que você respondeu, esse benefício provavelmente não se aplica";
+      texto  = "Ele exige uma sequela permanente que atrapalhe o trabalho. Se houve recuperação completa, esse ponto não se cumpre. Ainda assim, se você chegou a se afastar pelo INSS ou tem dúvida sobre outro benefício, vale mandar mensagem: pode haver outro direito no seu histórico.";
     } else if(semVinculo){
-      titulo = "Seu caso precisa de uma verificação no CNIS antes de qualquer conclusão";
-      texto  = "O auxílio-acidente exige a qualidade de segurado na data do acidente. Muita gente acha que não tinha vínculo e, ao puxar o extrato do CNIS, descobre que ainda estava no período de graça ou tinha contribuição em aberto. Essa checagem é rápida e vale a pena fazer antes de descartar.";
+      titulo = "Seu caso precisa de uma conferência antes de qualquer conclusão";
+      texto  = "Esse benefício exige que você estivesse trabalhando com registro no dia do acidente. Muita gente acha que não estava e, ao puxar o extrato do INSS, descobre que ainda estava protegida. Essa checagem é rápida e vale a pena antes de desistir.";
     } else {
-      titulo = "Seu caso tem os elementos que a lei exige. Vale uma análise.";
-      texto  = "As respostas indicam sequela, vínculo na época do acidente e reflexo no trabalho — os três pontos centrais do artigo 86 da Lei 8.213/91. O que define o pedido agora são os seus documentos médicos e o seu histórico no INSS. Envie o resumo abaixo e conversamos sobre o caminho.";
+      titulo = "Seu caso tem tudo o que a lei pede. Vale uma análise.";
+      texto  = "Suas respostas indicam sequela, trabalho com registro na época e reflexo no seu serviço — os três pontos centrais. O que define o pedido agora são os seus documentos médicos e o seu histórico no INSS. Envie o resumo abaixo e conversamos sobre o caminho.";
     }
 
     document.getElementById('qtitle').textContent = titulo;
@@ -1254,7 +822,7 @@ var CONFIG = {
 
     var msg = "Olá, Dra. Kênia. Fiz o autoteste no site do auxílio-acidente e minhas respostas foram:\n\n"
       + "1) Sequela: " + (resp[0]||"não respondido") + "\n"
-      + "2) Vínculo na época: " + (resp[1]||"não respondido") + "\n"
+      + "2) Trabalho na época: " + (resp[1]||"não respondido") + "\n"
       + "3) Reflexo no trabalho: " + (resp[2]||"não respondido") + "\n"
       + "4) Auxílio-doença: " + (resp[3]||"não respondido") + "\n\n"
       + "Gostaria de uma análise do meu caso.";
