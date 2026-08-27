@@ -71,6 +71,7 @@
 
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+section[id],[id]{scroll-margin-top:88px}
 body{
   margin:0;background:var(--papel);color:var(--tinta);
   font-family:var(--corpo);font-size:17.5px;line-height:1.65;
@@ -664,7 +665,7 @@ footer ul{list-style:none;margin:0;padding:0;display:grid;gap:11px}
 </section>
 
 <!-- ================= QUEM NAO TEM DIREITO ================= -->
-<section class="sec sec--tight" style="background:#fff;border-top:1px solid var(--linha);border-bottom:1px solid var(--linha)">
+<section class="sec sec--tight" id="nao-tem-direito" style="background:#fff;border-top:1px solid var(--linha);border-bottom:1px solid var(--linha)">
   <div class="wrap">
     <p class="eyebrow">Para não perder o seu tempo</p>
     <h2>Quando o auxílio-acidente não se aplica</h2>
@@ -705,7 +706,7 @@ footer ul{list-style:none;margin:0;padding:0;display:grid;gap:11px}
 </section>
 
 <!-- ================= RETROATIVOS (assinatura) ================= -->
-<section class="sec rt">
+<section class="sec rt" id="atrasados">
   <div class="wrap">
     <p class="eyebrow">Os atrasados</p>
     <h2>O direito não nasce no dia do pedido. Ele nasce lá atrás.</h2>
@@ -807,7 +808,7 @@ footer ul{list-style:none;margin:0;padding:0;display:grid;gap:11px}
 </section>
 
 <!-- ================= CASOS ================= -->
-<section class="sec sec--tight">
+<section class="sec sec--tight" id="casos">
   <div class="wrap">
     <p class="eyebrow">Situações que costumam gerar direito</p>
     <h2>Onde o auxílio-acidente mais aparece</h2>
@@ -827,7 +828,7 @@ footer ul{list-style:none;margin:0;padding:0;display:grid;gap:11px}
 </section>
 
 <!-- ================= INSS NEGOU ================= -->
-<section class="sec deny">
+<section class="sec deny" id="negativa">
   <div class="wrap">
     <div class="grid">
       <div>
@@ -955,7 +956,7 @@ footer ul{list-style:none;margin:0;padding:0;display:grid;gap:11px}
 <!-- ================= FAQ ================= -->
 <section class="sec sec--tight">
   <div class="wrap">
-    <p class="eyebrow">Dúvidas frequentes</p>
+    <p class="eyebrow" id="faq">Dúvidas frequentes</p>
     <h2>O que as pessoas mais perguntam</h2>
     <div class="faq">
       <details open>
@@ -1074,6 +1075,13 @@ footer ul{list-style:none;margin:0;padding:0;display:grid;gap:11px}
 var CONFIG = {
   whatsapp: "5531995565510",
 
+  /* MEDIÇÃO — preencha para rastrear os cliques no WhatsApp como conversão.
+     Deixe vazio ("") para não carregar nenhum script de medição.        */
+  ga4Id:            "",   /* ex.: "G-XXXXXXXXXX"  (Google Analytics 4)   */
+  adsConversionId:  "",   /* ex.: "AW-123456789"  (Google Ads)           */
+  adsConversionLbl: "",   /* rótulo da ação de conversão do Google Ads   */
+
+
   /* Link do seu perfil no Google (Perfil da Empresa) para o botão
      "Ler as avaliações no Google". Substitua pelo link curto do seu perfil. */
   googleUrl: "https://www.google.com/search?q=K%C3%AAnia+Portilho+Advocacia+Previdenci%C3%A1ria",
@@ -1105,9 +1113,43 @@ var CONFIG = {
   };
   document.querySelectorAll('a[href^="__WA_"]').forEach(function(a){
     var k = a.getAttribute('href');
+    a.setAttribute('data-origem', k.replace(/^__WA_|__$/g,'').toLowerCase());
     a.href = "https://wa.me/" + CONFIG.whatsapp + "?text=" + encodeURIComponent(msgs[k] || msgs["__WA_TOPO__"]);
   });
   document.getElementById('ano').textContent = new Date().getFullYear();
+})();
+
+/* =====================================================================
+   Medição — carrega o gtag só se houver ID configurado
+   ===================================================================== */
+(function(){
+  var id = CONFIG.ga4Id || CONFIG.adsConversionId;
+  if(!id) return;
+  var sc = document.createElement('script');
+  sc.async = true;
+  sc.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(id);
+  document.head.appendChild(sc);
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function(){ window.dataLayer.push(arguments); };
+  gtag('js', new Date());
+  if(CONFIG.ga4Id)           gtag('config', CONFIG.ga4Id);
+  if(CONFIG.adsConversionId) gtag('config', CONFIG.adsConversionId);
+})();
+
+/* Todo clique em link do WhatsApp vira evento — o atributo data-origem
+   identifica de qual bloco da página o clique partiu.                   */
+(function(){
+  document.addEventListener('click', function(ev){
+    var a = ev.target.closest && ev.target.closest('a[href*="wa.me/"]');
+    if(!a || typeof window.gtag !== 'function') return;
+    var origem = a.getAttribute('data-origem') || 'nao-identificado';
+    gtag('event', 'contato_whatsapp', { origem: origem });
+    if(CONFIG.adsConversionId && CONFIG.adsConversionLbl){
+      gtag('event', 'conversion', {
+        send_to: CONFIG.adsConversionId + '/' + CONFIG.adsConversionLbl
+      });
+    }
+  }, true);
 })();
 
 /* =====================================================================
@@ -1209,7 +1251,9 @@ var CONFIG = {
       + "4) Auxílio-doença: " + (resp[3]||"não respondido") + "\n\n"
       + "Gostaria de uma análise do meu caso.";
 
-    document.getElementById('qzap').href = "https://wa.me/" + CONFIG.whatsapp + "?text=" + encodeURIComponent(msg);
+    var qz = document.getElementById('qzap');
+    qz.setAttribute('data-origem','autoteste');
+    qz.href = "https://wa.me/" + CONFIG.whatsapp + "?text=" + encodeURIComponent(msg);
     show(4);
   }
 })();
