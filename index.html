@@ -21,6 +21,16 @@
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <meta name="robots" content="index,follow">
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18412566309"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-18412566309');
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fahkwang:wght@300;400;500;600&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -1075,11 +1085,15 @@ footer ul{list-style:none;margin:0;padding:0;display:grid;gap:11px}
 var CONFIG = {
   whatsapp: "5531995565510",
 
-  /* MEDIÇÃO — preencha para rastrear os cliques no WhatsApp como conversão.
-     Deixe vazio ("") para não carregar nenhum script de medição.        */
-  ga4Id:            "",   /* ex.: "G-XXXXXXXXXX"  (Google Analytics 4)   */
-  adsConversionId:  "",   /* ex.: "AW-123456789"  (Google Ads)           */
-  adsConversionLbl: "",   /* rótulo da ação de conversão do Google Ads   */
+  /* MEDIÇÃO
+     A tag do Google (AW-18412566309) já está instalada no <head> da página.
+     Aqui ficam só os complementos:                                        */
+  adsConversionId:  "AW-18412566309",
+  adsConversionLbl: "",   /* COLE AQUI o rótulo da ação de conversão
+                             "Clique WhatsApp" do Google Ads. Sem ele, o
+                             clique é registrado como evento, mas NÃO conta
+                             como conversão na campanha.                   */
+  ga4Id:            "",   /* opcional: "G-XXXXXXXXXX" do Analytics 4      */
 
 
   /* Link do seu perfil no Google (Perfil da Empresa) para o botão
@@ -1123,17 +1137,11 @@ var CONFIG = {
    Medição — carrega o gtag só se houver ID configurado
    ===================================================================== */
 (function(){
-  var id = CONFIG.ga4Id || CONFIG.adsConversionId;
-  if(!id) return;
-  var sc = document.createElement('script');
-  sc.async = true;
-  sc.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(id);
-  document.head.appendChild(sc);
-  window.dataLayer = window.dataLayer || [];
-  window.gtag = function(){ window.dataLayer.push(arguments); };
-  gtag('js', new Date());
-  if(CONFIG.ga4Id)           gtag('config', CONFIG.ga4Id);
-  if(CONFIG.adsConversionId) gtag('config', CONFIG.adsConversionId);
+  /* A tag base já foi carregada no <head>. Aqui só registramos o GA4,
+     caso você preencha o ID dele mais tarde. */
+  if(CONFIG.ga4Id && typeof window.gtag === 'function'){
+    gtag('config', CONFIG.ga4Id);
+  }
 })();
 
 /* Todo clique em link do WhatsApp vira evento — o atributo data-origem
